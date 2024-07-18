@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  background: linear-gradient(to bottom,white, #22D9E2, #0D2B6C);
+}
+
+.container,.inner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', 'sans-serif','Arial'
+}
+
+.title-container {
+  text-align: center;
+  padding: 5px 0 50px 0;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-family: 'Arsenal SC';
+}
+
+.title-container h1{
+ margin: 40px 0 10px;
+}
+
+.title-container h1 span {
+  text-decoration : underline black;
+  font-weight: 3000;
+  margin: 40px 0 10px;
+  transition: text-decoration 0.4s ease;
+}
+
+.title-container h1 span:hover {
+  text-decoration: underline white;
+}
+
+.title-container h2 {
+  font-weight: 500;
+}
+
+.inner-container {
+
+  background-color: #F8F8F8;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 10;
+  box-shadow: 0px 0px 100px 0px #00626F;
+  }
+
+.inner-container-label{
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+#text-input {
+  border: none;
+  padding: 12px ;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#check-btn {
+  margin: 10px 0;
+  padding: 0.3em 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: #00C7E2;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#check-btn:hover {
+  background: #00B9D2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+#check-btn:active {
+  outline: none; 
+  background-color: #009BB1;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.result-container {
+ margin: 8px auto 5px;
+ padding: 5px auto 2px ;
+ text-align: center;
+}
+
+#result span {
+  font-weight: bold;
+  color: #0F2B6C;
+}
+.palindrome-definition-div{
+  width: min(100vw, 450px);
+  font-size: 1.3rem;
+  background-color: #000;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff
+}
+
+.palindrome-definition {
+    vertical-align: middle;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+
+  *{
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2{
+    font-size: 1.54rem;
+  }
+
+  .inner-container{
+    margin: 0;
+    padding: 5px;
+  }
+
+  .inner-container-label{
+    font-size: 1.2rem;
+  }
+
+  #text-input {
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: auto 5px;
+  }
+
+  .result-container {
+    font-size: 1.4rem;
+  }
+
+  .palindrome-definition-div{
+    padding: 30px 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+}
